@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: #f4f4f4; */
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+#main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.form {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 550px;
+    text-align: center;
+    position: relative;
+    top:200px;
+}
+
+.form h2 {
+    color: black;
+}
+
+.form label {
+    display: block;
+    margin-top: 100px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 18px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+.form button {
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 25px;
+    width: 105%;
+    font-size: 1.5rem;
+}
+
+.form button:hover {
+    background-color: #2b62b6;
+}
+.mary h1 {
+    position: absolute;
+    top:35px;
+    left:20px;
+    font-size: 5em;
+    color: rgb(58, 55, 55);
+    font-style: inherit;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+}
+.mary img{
+    position: absolute;
+    top:50px;
+    left:520px;
+    border-radius: 40%;
+}
+.a3 {
+    font-size: 2.3rem;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top:60px;
+    right: 100px;
+    font-family: inherit;
+    color: #3b82f6;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 70px;
+    transition: 0.3s;
+}
+.a3 a{
+    text-decoration: none;
+    color:#ffffff;
+    position: relative;
+    top:5px;
+}
+.a3:hover {
+    background-color: darkblue;
+    box-shadow: 0 0 0 5px rgb(56, 56, 226);
+  }
+
+  .a0 {
+    font-size: 2.3rem;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    top:60px;
+    right: 400px;
+    font-family: inherit;
+    color: #3b82f6;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 70px;
+    transition: 0.3s;
+}
+.a0 a{
+    text-decoration: none;
+    color:#ffffff;
+    position: relative;
+    top:5px;
+}
+.a0:hover {
+    background-color: darkblue;
+    box-shadow: 0 0 0 5px rgb(56, 56, 226);
+  }
+  header {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-size: 3.5em;
+}
+
+header p {
+    margin: 0.5em 0;
+    font-size: 1.8em;
+}
+footer {
+    text-align: center;
+    padding: 3em;
+    background-color: #333;
+    color: #fff;
+    font-size: 2.5em;
+    position: absolute;
+    top:1800px;
+    width: 92.1%;
+}
+footer a{
+    text-decoration: none;
+    color: blue;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Switch to Solar and Save Big with Subsidies</h1>
+        <p>Empowering you to make eco-friendly choices with government-backed incentives</p>
+    </header>
+    <div class="mary">
+        <h1>BrightChoice</h1>
+        <img src="icon.jpg" height="100px" width="100px">
+    </div>
+    <div class="lie">
+        <div class="a0"> <a href="style.html">HOME</a></div>
+        <div class="a3"><a href="contact.html">Contact us</a></div>
+    </div>
+    <div id="main">
+    <div class="form">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="gender">Gender:</label>
+            <input type="gender" id="gender" name="gender" placeholder="Gender" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    </div>
+    <footer>
+        <p>For more information on solar subsidies and installation options, <a href="contact.html">Contact Us</a>
+        <br><br>© 2024 Solar Subsidy Awareness</p>
+    </footer>
+    <script >
+        function validateForm() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const namePattern = /^[A-Za-z\s]{3,}$/;  
+      
+      if (!namePattern.test(name)) {
+        alert("Name must be at least 3 characters long and contain only letters and spaces.");
+        return false;
+      }
+  
+      if (!email.includes("@")) {  
+        alert("Please enter a valid email address.");
+        return false;
+      }
+      alert("Message sent successfully!");
+        return true;
+    }
+    </script>
+</body>
+</html>
